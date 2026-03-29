@@ -1,0 +1,133 @@
+
+
+
+h1 {
+    font-family: Montserrat, sans-serif;
+    font-weight: 400;
+    font-size: 3rem; /* On small screens, this is too big */
+    text-align: center;
+    color: white;
+    /* --- ADD THESE LINES --- */
+    word-wrap: break-word; /* Allows long words to break */
+    overflow-wrap: break-word; /* Modern version of word-wrap */
+    padding: 0 10px; /* Prevents text from touching edge of screen */
+}
+
+
+body {
+  background: black;
+  
+}
+
+
+p {
+    font-family: Open Sans ;
+    font-weight: light 300;
+    color:white;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.container{
+    position: relative;
+}
+.container img {
+    /* --- CHANGE THIS --- */
+    width: 100%; /* Instead of 1224px */
+    max-width: 1224px; /* Still allows it to be large on desktop */
+    height: auto; /* Keeps aspect ratio */
+    position: absolute;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+.carro {
+    background-color: black
+   
+;
+    padding: 40px 0;
+}
+.carousel {
+  max-width: 650px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+  
+  
+}
+
+.wrapper {
+    
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100vh;           /* Example: centers in the full viewport height */
+  /* Add any other container styles (e.g., width, background-color) */
+
+
+
+}
+.wrapper img {
+ 
+  max-width: 40%; /* Ensures the image never exceeds the container's width */
+  height: auto;    /* Maintains the aspect ratio */
+  
+}
+
+
+
+
+
+
+
+
+/* --- ADD THIS TO YOUR CSS --- */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem; /* Smaller size for phones */
+    }
+    p {
+        font-size: 1.2rem; /* Optional: shrink paragraph too */
+    }
+}
+
+/* Default styles for mobile (links hidden, toggle visible) */
+.nav-links {
+  display: none;
+  /* Additional styles for the mobile menu appearance (e.g., column layout) */
+}
+
+.menu-toggle {
+  display: block; /* Show the hamburger icon */
+}
+
+/* Media query for screens wider than, for example, 768px */
+@media screen and (min-width: 768px) {
+  .nav-links {
+    display: flex; /* Show the navigation links */
+    /* Adjust for your layout (e.g., flex-flow: row wrap;) */
+  }
+
+  .menu-toggle {
+    display: none; /* Hide the hamburger icon */
+  }
+}
+
+ body.contact-page {
+    background: rgb(60, 4, 113);
+}
+
+.contact-page p {
+    margin-top: 300px;
+}
+
+
+
+
