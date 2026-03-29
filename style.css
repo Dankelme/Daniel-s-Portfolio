@@ -128,6 +128,8 @@ p {
 .contact-page p {
     margin-top: 300px;
 }
+a, a: visited, a:hover, a:active {
+    color:white; }
 
 
 
