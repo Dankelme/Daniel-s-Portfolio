@@ -130,6 +130,10 @@ p {
 }
 a, a: visited, a:hover, a:active {
     color:white; }
+a, a: link, a: visited, a:hover, a: active { 
+    color: white !important; 
+* {
+    -webkit-text-fill-color: white !important;
 
 
 
